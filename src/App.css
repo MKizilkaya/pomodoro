@@ -1,0 +1,156 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: rgb(202, 197, 189);
+
+}
+
+.container {
+  border: 1px solid gray;
+  width: 90%;
+  height: 90vh;
+  margin-top: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.left-container {
+  border: 1px solid gray;
+  width: 25%;
+
+}
+
+.middle-container {
+  border: 1px solid gray;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.right-container {
+  border: 1px solid gray;
+  width: 25%;
+
+}
+
+.timer {
+  position: absolute;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.control-panel {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1rem;
+  font-size: 2rem;
+}
+
+.control-icon {
+  cursor: pointer;
+}
+
+.task-control-icon {
+  font-size: 2rem;
+  cursor: pointer;
+
+}
+
+.task-control-panel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+
+}
+
+.input-panel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  font-size: 20px;
+}
+
+.input-name {
+  width: 90%;
+  padding: 0.5rem;
+  border: none;
+  border-bottom: 1px solid black;
+  outline: none;
+  font-size: 1rem;
+}
+
+.input-time {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.input-mins {
+  width: 90%;
+  font-size: 20px;
+}
+
+.input-secs {
+  width: 90%;
+  font-size: 20px;
+}
+
+
+.input-text {
+  margin-left: -35px;
+
+  pointer-events: none;
+}
+
+
+
+.progress-panel {
+  padding: 20px;
+}
+
+.progress-panel h3 {
+  margin-bottom: 10px;
+}
+
+.progress-panel p {
+  margin: 10px 0;
+}
+
+.progress-panel ul {
+  list-style: none;
+  padding: 0;
+}
+
+.progress-panel li {
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+}
+
+
+.progress-panel .status-icon {
+  margin-left: 8px;
+  font-size: 1.2em;
+  /* İkonların boyutunu ayarlayın */
+}
+
+.status-icon.completed {
+  color: green;
+}
+
+.status-icon.not-completed {
+  color: red;
+}
